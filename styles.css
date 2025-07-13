@@ -1,7 +1,7 @@
 :root{
     --text-primary: #1b1b1b;
     --text-secondary: #6b7280;
-    --base-font-size: 16px;
+    --base-font-size: 18px;
 }
 
 body{
@@ -11,24 +11,68 @@ body{
     font-size: var(--base-font-size);
 }
 
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
 }
+
+.nav-bar a{
+    text-decoration: none;
+}
+
 
 .logo{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-.nav-bar{
+a{
+    color: var(--text-secondary);
+}
+
+a.active{
+    color: var(--text-primary);
+}
+
+
+.nav-logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
+    gap: 1rem;
 }
 
+
+.nav-links{
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#search-btn{
+    height: 30px;
+    width: 30px;
+}
+
+#cart-btn{
+    height: 30px;
+    width: 30px;
+}
+
+#login-btn{
+    color: var(--text-primary);
+}
+
+.nav-buttons a{
+    align-self: center;
+    border-left: 2px solid #1b1b1b;
+    padding-left: 10px;
+}
