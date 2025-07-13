@@ -2,6 +2,7 @@
     --text-primary: #1b1b1b;
     --text-secondary: #6b7280;
     --base-font-size: 18px;
+    --border-clor: #D3D3D3;
 }
 
 body{
@@ -52,6 +53,8 @@ a.active{
     gap: 4rem;
 }
 
+
+
 .nav-buttons{
     display: flex;
     gap: 0.5rem;
@@ -60,11 +63,13 @@ a.active{
 #search-btn{
     height: 30px;
     width: 30px;
+    object-fit: cover;
 }
 
 #cart-btn{
     height: 30px;
     width: 30px;
+    object-fit: cover;
 }
 
 #login-btn{
@@ -75,4 +80,49 @@ a.active{
     align-self: center;
     border-left: 2px solid #1b1b1b;
     padding-left: 10px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0.5rem 2rem;
+}
+
+#paypal{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+#master-card{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-left: 8rem;
+}
+
+.payment{
+    display: flex;
+    align-self: center;
+    border-bottom: 2px solid var(--border-clor);
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input{
+    width: 100%;
+    height: 1rem;
 }
