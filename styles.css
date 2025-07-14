@@ -1,15 +1,19 @@
 :root{
-    --text-primary: #1b1b1b;
+    --text-primary: #0B1215;
     --text-secondary: #6b7280;
     --base-font-size: 18px;
-    --border-clor: #D3D3D3;
+    --border-color: #D3D3D3;
 }
 
 body{
-    font-family: "Tiktok Sans";
+    max-width: 100wv;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     background-color: #fff;
     font-size: var(--base-font-size);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAF9F6;
 }
 
 
@@ -25,11 +29,12 @@ body{
 }
 
 
+
 .logo{
     height: 45px;
     width: 45px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 a{
@@ -52,8 +57,6 @@ a.active{
     display: flex;
     gap: 4rem;
 }
-
-
 
 .nav-buttons{
     display: flex;
@@ -83,10 +86,20 @@ a.active{
 }
 
 .main-content{
+    justify-content: center;
+    align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    padding: 0.5rem 2rem;
+    gap: 5rem;
+    padding-left: 4rem;
+    margin-top: 1rem;
+}
+
+.left-section{
+    margin-left: auto;
+}
+.right-section{
+    max-width: fit-content;
 }
 
 #paypal{
@@ -102,27 +115,140 @@ a.active{
     margin-left: 8rem;
 }
 
+
+
 .payment{
     display: flex;
     align-self: center;
-    border-bottom: 2px solid var(--border-clor);
+    border-bottom: 2px solid var(--border-color);
     gap: 0.5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
 .form-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .form-group{
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form-group label{
+    display: block;
     margin-bottom: 1rem;
 }
 
-.input{
+input,
+select,
+textarea{
     width: 100%;
-    height: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border-color);
+    font-size: 0.97rem;
+    background-color: #fff;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
 }
+
+.row-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.row-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.row-group input{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.cvv-group{
+    margin-left: 1rem;
+}
+
+.continue-btn{
+    width: 100%;
+    background-color: var(--text-primary);
+    color: white;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    transition: opacity 0.2s ease;
+    align-self: center;
+    font-size: var(--base-font-size);
+    font-weight: 200;
+}
+
+.continue-btn:hover{
+    opacity: 0.9;
+    
+}
+
+.product-img{
+    align-self: center;
+}
+
+
+.product-img img{
+    align-self:center;
+    width: 170px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.product-group{
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+p{
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 0.7rem;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2rem ;
+    align-self: center;
+    margin-left: auto;
+}
+
+.subtotal-product,
+.price-delivery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-summary{
+    line-height: 0.2rem;
+}
+
+h2{
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 500;
+}
+
+
+
