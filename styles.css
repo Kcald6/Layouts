@@ -126,6 +126,15 @@ a.active{
     margin-bottom: 1rem;
 }
 
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
 .form-container{
     width: 100%;
     display: flex;
@@ -170,8 +179,6 @@ textarea{
     display: flex;
     gap: 2rem;
 }
-
-
 
 .cvv-group{
     margin-left: 1rem;
